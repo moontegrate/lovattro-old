@@ -1,0 +1,217 @@
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 15;
+    transform: scale(0);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: absolute;
+    transform:scale(0);
+    opacity: 0;
+    max-width: 560px;
+    width: 100%;
+    background-color: #151515;
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 20;
+
+    &_mini {
+        svg {
+            height: 300px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .g-recaptcha {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        margin: 0 30px 30px;
+        text-align: center;
+    }
+
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+
+        &:hover {
+            .modal__close-x {
+                background-color: $main-color;
+            }
+        }
+        
+        &-x {
+            position: absolute;
+            bottom: 1.5px;
+            left: 50%;
+            width: 4px;
+            height: 24px;
+            background-color: #FFFFFF;
+            transform: rotate(-45deg);
+            transition: 0.2s background-color;
+        }
+
+        .x2 {
+            transform: rotate(45deg);
+        }
+    }
+
+    &_privacy {
+        max-width: 1000px;
+        max-height: 700px;
+        height: 100%;
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .privacy-terms {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        background-color: $black-accent;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        border-radius: 10px;
+        overflow: scroll;
+
+        span {
+            font-weight: 700;
+        }
+
+        &::-webkit-scrollbar {
+            width: 10px;
+
+            &:horizontal {
+                display: none;
+            }
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: $grey-accent;
+            border-radius: 5px;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 5px;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+            border-radius: 5px;
+        }
+    }
+}
+
+.feed-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    input, textarea {
+        height: 40px;
+        padding: 0 15px;
+        margin-bottom: 10px;
+        background-color: $black-accent;
+        color: $grey-text;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        border-radius: 10px;
+    }
+
+    div, input, textarea {
+        max-width: 520px;
+        width: 100%;
+    }
+
+    textarea {
+        padding: 10px 15px;
+        margin-bottom: 20px;
+        height: 170px;
+    }
+
+    &__privacy-checkbox {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        input {
+            width: 20px;
+            height: 20px;
+            margin: 0 20px 0 0;
+        }
+    }
+
+    .loader {
+        border: 5px solid rgba($color: #ffffff, $alpha: 0.5);
+        max-width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border-top-color: #fff;
+        animation: spin 1s linear infinite;
+    }
+}
+
+input.error {
+    border: 1px solid rgb(219, 54, 54);
+}
+
+label.error {
+    color: rgb(219, 54, 54);;
+    margin-bottom: 10px;
+}
+
+#name-error, #email-error, #phone-error {
+    margin-bottom: 10px;
+}
+
+#checkbox-error {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background-color: #151515;
+    border: 1px solid #404040;
+    border-radius: 10px;
+    padding: 7px;
+}

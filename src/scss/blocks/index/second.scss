@@ -1,0 +1,279 @@
+.second {
+    margin-bottom: 75px;
+}
+
+.develop {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 75px;
+
+    &__info {
+        max-width: 520px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 30px;
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    &__icons {
+        max-width: 610px;
+        display: grid;
+        grid-template-columns: repeat(5, 96.36px);
+        grid-template-rows: repeat(2, 96.36px);
+        gap: 25px;
+    }
+
+    &__icon {
+        background-color: #1C1C1C;
+        border-radius: 50%;
+        height: 96.36px;
+        width: 96.36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.2s;
+        transition-property: transform, box-shadow;
+
+        svg {
+            max-width: 50%;
+            max-height: 60%;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    &__html {
+        .develop__icon {
+            &:hover {
+                box-shadow: 0 0 25px rgba($color: #ff7a55, $alpha: 1.0);
+            }
+        }
+    }
+
+    &__css {
+        .develop__icon {
+            &:hover {
+                box-shadow: 0 0 25px rgba($color: #31b3ff, $alpha: 1.0);
+            }
+        }
+    }
+
+    &__js {
+        .develop__icon {
+            &:hover {
+                box-shadow: 0 0 25px rgba($color: #f7cc1e, $alpha: 1.0);
+            }
+        }
+    }
+
+    &__ts {
+        .develop__icon {
+            &:hover {
+                box-shadow: 0 0 25px rgba($color: #0f9fff, $alpha: 1.0);
+            }
+        }
+    }
+
+    &__git {
+        .develop__icon {
+            &:hover {
+                box-shadow: 0 0 25px rgba($color: #ff745f, $alpha: 1.0);
+            }
+        }
+    }
+
+    &__reactjs {
+        .develop__icon {
+            &:hover {
+                box-shadow: 0 0 25px rgba($color: #54daff, $alpha: 1.0);
+            }
+        }
+    }
+
+    &__vuejs {
+        .develop__icon {
+            &:hover {
+                box-shadow: 0 0 25px rgba($color: #54f7ae, $alpha: 1.0);
+            }
+        }
+    }
+
+    &__nodejs {
+        .develop__icon {
+            &:hover {
+                box-shadow: 0 0 25px rgba($color: #7ff665, $alpha: 1.0);
+            }
+        }
+    }
+
+    &__figma {
+        .develop__icon {
+            &:hover {
+                box-shadow: 0 0 25px rgba($color: #ffffff, $alpha: 1.0);
+            }
+        }
+    }
+
+    &__vscode {
+        .develop__icon {
+            &:hover {
+                box-shadow: 0 0 25px rgba($color: #46b8ff, $alpha: 1.0);
+            }
+        }
+    }
+}
+
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__pic {
+        svg {
+            width: 330px;
+            height: 210px;
+        }
+    }
+
+    &__info {
+        max-width: 768px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 30px;
+    }
+    
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    }
+}
+
+//Изменение схемы сетки значков в зависимости от ширины экрана
+@media (max-width: 1206px) {
+    .develop {
+        &__icons {
+            grid-template-columns: repeat(4, 96.36px);
+            grid-template-rows: repeat(3, 96.36px);
+            grid-template-areas: 
+            "html css js ."
+            "ts git reactjs vuejs"
+            "nodejs figma vscode .";
+        }
+
+        &__html, &__css, &__js, &__nodejs, &__figma, &__vscode {
+            transform: translateX(calc(50% + 10px));
+        }
+
+        &__html {
+            grid-area: html;
+        }
+    
+        &__css {
+            grid-area: css;
+        }
+    
+        &__js {
+            grid-area: js;
+        }
+    
+        &__ts {
+            grid-area: ts;
+        }
+    
+        &__git {
+            grid-area: git;
+        }
+    
+        &__reactjs {
+            grid-area: reactjs;
+        }
+    
+        &__vuejs {
+            grid-area: vuejs;
+        }
+    
+        &__nodejs {
+            grid-area: nodejs;
+        }
+    
+        &__figma {
+            grid-area: figma;
+        }
+    
+        &__vscode {
+            grid-area: vscode;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .develop {
+        &__icons {
+            grid-template-columns: repeat(5, 96.36px);
+            grid-template-rows: repeat(2, 96.36px);
+            grid-template-areas: 
+            "html css js ts git"
+            "reactjs vuejs nodejs figma vscode";
+        }
+
+        &__html, &__css, &__js, &__nodejs, &__figma, &__vscode {
+            transform: translateX(0);
+        }
+    }
+}
+
+@media (max-width: 655px) {
+    .develop {
+        &__icons {
+            grid-template-columns: repeat(4, 96.36px);
+            grid-template-rows: repeat(3, 96.36px);
+            grid-template-areas: 
+            "html css js ."
+            "ts git reactjs vuejs"
+            "nodejs figma vscode .";
+        }
+
+        &__html, &__css, &__js, &__nodejs, &__figma, &__vscode {
+            transform: translateX(calc(50% + 10px));
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .develop {
+        &__icons {
+            grid-template-columns: repeat(3, 96.36px);
+            grid-template-rows: repeat(4, 96.36px);
+            grid-template-areas: 
+            "html css ."
+            "js ts git"
+            "reactjs vuejs ."
+            "nodejs figma vscode";
+        }
+        &__js, &__nodejs, &__figma, &__vscode {
+            transform: translateX(0);
+        }
+
+        &__html, &__css, &__reactjs, &__vuejs {
+            transform: translateX(calc(50% + 10px));
+        }
+    }
+}

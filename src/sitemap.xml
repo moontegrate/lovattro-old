@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://lovattro.kz</loc>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="kk" href="https://lovattro.kz/"/>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="ru" href="https://lovattro.kz/ru/"/>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://lovattro.kz/en/"/>
+    </url>
+    <url>
+        <loc>https://lovattro.kz/coding/</loc>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="kk" href="https://lovattro.kz/coding/"/>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="ru" href="https://lovattro.kz/ru/coding/"/>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://lovattro.kz/en/coding/"/>
+    </url>
+    <url>
+        <loc>https://lovattro.kz/design/</loc>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="kk" href="https://lovattro.kz/design/"/>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="ru" href="https://lovattro.kz/ru/design/"/>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://lovattro.kz/en/design/"/>
+    </url>
+    <url>
+        <loc>https://lovattro.kz/seo/</loc>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="kk" href="https://lovattro.kz/seo/"/>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="ru" href="https://lovattro.kz/ru/seo/"/>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://lovattro.kz/en/seo/"/>
+    </url>
+    <url>
+        <loc>https://lovattro.kz/hosting/</loc>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="kk" href="https://lovattro.kz/hosting/"/>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="ru" href="https://lovattro.kz/ru/hosting/"/>
+        <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://lovattro.kz/en/hosting/"/>
+    </url>
+</urlset>

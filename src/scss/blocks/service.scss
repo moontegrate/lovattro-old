@@ -1,0 +1,67 @@
+.nav {
+    margin: 30px 0;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        font-size: 16px;
+        line-height: 26px;
+        color: $grey-text;
+        transition: 0.2s color;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+
+    &__arrow {
+        display: block;
+        width: 16px;
+        margin: 0 10px;
+    }
+}
+
+.service {
+    padding-bottom: 75px;
+    background: url('/img/bg-front.svg') center/contain no-repeat;
+
+    .container {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        gap: 100px;
+    }
+
+    &__photo {
+        max-width: 466px;
+        width: 100%;
+        margin-bottom: 20px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+        max-width: 594px;
+        width: 100%;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 73px;
+        margin-bottom: 20px;
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 150%;
+        margin-bottom: 40px;
+    }
+}

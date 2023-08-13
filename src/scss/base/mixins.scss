@@ -1,0 +1,15 @@
+// @mixin text-nongradient {
+//     color: transparent;
+//     background: #FFFFFF;
+//     background-clip: text;
+// }
+
+// @mixin text-gradient {
+//     color: transparent;
+//     background: linear-gradient(180deg, #FF6F6F 40%, #FF6F91 80%);
+//     background-clip: text;
+// }
+
+@mixin button-gradient {
+    background: linear-gradient(143.52deg, #FF6F6F 30%, #FF6F91 80%);
+}

@@ -1,0 +1,30 @@
+.promo {
+    padding-top: 15vh;
+    height: 90vh;
+    width: 100%;
+    background: url('/img/bg-front.svg') center/contain no-repeat;
+
+    &__wrapper {
+        max-height: 400px;
+        max-width: 100%;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin: 0 0 10vh;
+        max-width: 1000px;
+        font-weight: 700;
+        font-size: 75px;
+        line-height: 90px;
+
+        .typed-cursor {
+            color: transparent;
+            background: linear-gradient(180deg, #FF6F6F 40%, #FF6F91 80%);
+            background-clip: text;
+        }
+    }
+}
