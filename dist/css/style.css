@@ -744,7 +744,6 @@ body main {
 }
 
 .services {
-  background: url("/img/bg.svg") center/cover repeat-y;
   position: relative;
   padding: 60px 0 30px;
   height: 575px;
@@ -988,7 +987,7 @@ body main {
 }
 
 .aboutus {
-  background: url("/img/bg.svg") center/cover repeat-y;
+  background: url("/img/bg.svg") center/contain no-repeat;
   padding-top: 60px;
 }
 
@@ -1067,8 +1066,6 @@ body main {
 .aboutus__glass {
   width: 100%;
   padding: 75px 0 50px;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
 }
 
 .aboutus__glass .container {
@@ -1092,7 +1089,8 @@ body main {
 
 .aboutus__glass-form .feed-form input,
 .aboutus__glass-form .feed-form textarea {
-  background-color: #121212;
+  background-color: #1c1c1c;
+  opacity: .7;
 }
 
 .aboutus__contacts {
@@ -2356,6 +2354,10 @@ label.error {
 
   .portfolio__grid-item {
     max-height: 600px;
+  }
+
+  .aboutus {
+    background: url("/img/bg.svg") center/cover no-repeat;
   }
 
   .aboutus__prop-name {

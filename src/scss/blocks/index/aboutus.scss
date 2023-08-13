@@ -1,5 +1,5 @@
 .aboutus {
-    background: url('/img/bg.svg') center/cover repeat-y;
+    background: url('/img/bg.svg') center/contain no-repeat;
     padding-top: 60px;
 
     .container {
@@ -65,7 +65,6 @@
     &__glass {
         width: 100%;
         padding: 75px 0 50px;
-        backdrop-filter: blur(15px);
 
         .container {
             display: flex;
@@ -83,7 +82,8 @@
         &-form {
             .feed-form {
                 input, textarea {
-                    background-color: $main-black;
+                    background-color: $black-accent;
+                    opacity: 0.7;
                 }
             }
         }
